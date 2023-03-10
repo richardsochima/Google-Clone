@@ -1,0 +1,210 @@
+* {/*** General Settings ***/
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {/*** General Settings ***/
+    width: 100vw;
+    height: 100vh;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+nav {/*** Nav Bar Start ***/
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+nav ul {
+    display: flex;
+    gap: 12px;
+}
+nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+}
+nav ul a:hover {
+    text-decoration: underline;
+}
+nav ul li div {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    width: 1.2rem;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+nav ul li div:hover {
+    background-color: #D3E4CD;
+}
+#profile {/* Profile Image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green; 
+    width: 1rem;
+    border-radius: 50%;
+    color: #fff;
+    font-size: medium;
+}
+#mobile-menu {
+    width: 1.2rem;
+    display: none;
+}
+#apps {/* 9 Dots Image */
+    width: 1.2rem;
+}/*** Nav Bar End ***/
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#logo-side {/*** Google Logo Side Start ***/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 350px;
+}
+#google {/* Google Logo */
+    width: 272px;
+    height: 92px;
+}/*** Google Logo Side End ***/
+
+input {/*** Search Input Start ***/
+    background-color: transparent;
+    color: rgba(0,0,0,.87);
+    border: none;
+    font-size: 16px;
+    width: 527px;
+    height: 100%;
+    outline: none;
+    margin-left: 2rem;
+}
+.search-bar {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    min-height: 44px;
+    margin-top: 1.2rem;
+    padding: 0 12px;
+    border-radius: 2rem;
+    margin-left: auto;/* Sets as centered */
+    margin-right: auto;/* Sets as centered */
+}
+.search-bar:hover, .search-bar:active {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+#magnifying-glass {/*** Magnifying Glass ***/
+    width: 16px;
+    display: block;
+    margin-top: -30px;
+    margin-left: 4px;
+}/*** Search Input End ***/
+
+.buttons {/*** Buttons Start ***/
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+    flex-grow: 1;
+    min-height: 240px;
+}
+.btn {
+    background-color: #f8f9fa;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 12px 6px;
+    padding: 0 12px;
+    height: 36px;
+    cursor: pointer;
+    border-top-color: rgb(248, 249, 250);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(248, 249, 250);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(248, 249, 250);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(248, 249, 250);
+    border-left-style: solid;
+}
+.btn:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}/*** Buttons End ***/
+
+footer {/*** Footer Start ***/
+    width: 100%;
+    margin-bottom: 10px;
+}
+footer div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+footer div ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+footer div ul li a {
+    text-decoration: none;
+    color: #70757a;
+    font-size: 14px;
+}
+footer div ul li a:hover {
+    text-decoration: underline;
+}/*** Footer End ***/
+
+@media screen and (max-width: 860px){
+    #logo-side {/*** Google Logo Side Start ***/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        min-height: 42%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    * {
+        font-size: 16px;
+    }   
+    #gmail {
+        display: none;
+    }
+    nav {/*** Nav Bar Start ***/
+        position: absolute;
+        top: 1%;
+        right: 3%;
+    }
+    #logo-side {/*** Google Logo Side Start ***/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        min-height: 40%;
+    }
+    #google {
+        width: 48%;
+        height: auto;
+    }
+    footer {
+        margin-top: 80%;    
+    }
+    footer div ul {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-bottom: 4px;
+    }
+    .search-bar {
+            width: 280px;
+            height: 44px; 
+    }
+}
